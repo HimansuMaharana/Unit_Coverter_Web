@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <button id="theme-toggle">Dark Theme</button>
+        <div class="input-group">
+            <label for="input-value">Value:</label>
+            <input type="number" id="input-value" placeholder="Enter value">
+        </div>
+        <div class="category-selector">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="volume">Volume</option>
+                <option value="area">Area</option>
+                <option value="speed">Speed</option>
+                <option value="time">Time</option>
+            </select>
+        </div>
+        <div class="unit-selectors">
+            <div class="unit-selector">
+                <label for="input-unit">From:</label>
+                <select id="input-unit"></select>
+            </div>
+            <div class="unit-selector">
+                <label for="output-unit">To:</label>
+                <select id="output-unit"></select>
+            </div>
+        </div>
+        <div class="decimal-precision">
+            <label for="precision">Decimal Precision:</label>
+            <input type="number" id="precision" value="2" min="0">
+        </div>
+        <div class="output-group">
+            <label for="output-value">Result:</label>
+            <input type="text" id="output-value" readonly>
+        </div>
+        <div class="controls">
+            <button id="clear-button">Clear</button>
+            <button id="history-button">Recent Conversions</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
